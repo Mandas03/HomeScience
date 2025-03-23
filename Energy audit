@@ -1,6 +1,24 @@
-git init
-git add .
-git commit -m "Initial commit - Energy Audit Web"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/energy-audit-web.git
-git push -u origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Audit Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Energy Audit Tool ⚡</h1>
+        <p>Enter your daily energy usage (kWh) below to get energy-saving recommendations.</p>
+        
+        <input type="number" id="energyInput" placeholder="e.g. 350">
+        <button onclick="getRecommendation()">Check Energy Efficiency</button>
+        
+        <div class="result" id="result">Your energy efficiency result will appear here.</div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
